@@ -1,4 +1,5 @@
-![cases java assignment](https://user-images.githubusercontent.com/23446150/156135062-02d17f8a-293b-4dff-b94f-70fe4c9ced6e.jpg)
+![cases java assignment](https://user-images.githubusercontent.com/23446150/156135515-7736b140-f5ef-4433-ae25-f90b029f27ce.jpg)
+
 
 Team Member:
 Ilham Fadhil
