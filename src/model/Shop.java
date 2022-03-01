@@ -10,7 +10,7 @@ public class Shop {
         this.items = new ArrayList<Item>();
     }
 
-    public void additem(Item item) {
+    public void addItem(Item item) {
         this.items.add(item);
     }
 
@@ -19,8 +19,11 @@ public class Shop {
             System.out.println(item.getItemInfo());
         }
     }
-}
 
-//ini buat apaaa ya?
-// buat wadah item,, untuk waktu perlu nampilin semuanya, i think? okee
-//oo yaudah coba bikin dulu nanti ajarin gua
+    public void getAllItemSold() {
+        System.out.println("Total Item sold information:");
+        for (Item item : this.items) {
+            System.out.println("Total Item Sold for " + item.getName() +" is: " + item.getItemSold());
+        }
+    }
+}

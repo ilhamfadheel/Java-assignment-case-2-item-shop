@@ -14,8 +14,8 @@ public class Main {
 
         
         Shop myShop = new Shop();
-        myShop.additem(barang_1);
-        myShop.additem(barang_2);
+        myShop.addItem(barang_1);
+        myShop.addItem(barang_2);
 
         // get all items registered before purchase
         myShop.getAllItems(); 
@@ -24,12 +24,22 @@ public class Main {
         buyItem(barang_1, 10);
         buyItem(barang_2, 20);
 
-        System.out.println("Total Item Sold for " + barang_1.getName() +" is: " + getItemSold(barang_1));
-        System.out.println("Total Item Sold for " + barang_2.getName() +" is: " + getItemSold(barang_2));
-
+        // get all information about total item sold
+        myShop.getAllItemSold();
         
         // get all items registered after purchase
-        myShop.getAllItems(); 
+        myShop.getAllItems();
+
+        // edit item based on item index in Shop
+        barang_1.setName("Shampoo Keramas");
+        barang_1.setStock(110);
+        barang_1.setPoint(35);
+
+        barang_2.updateItem("Raket Nyamuk", 50, 90);
+
+        // get all items registered after edit
+        System.out.println("Updated Items:");
+        myShop.getAllItems();
 
         System.exit(0);
 
@@ -50,17 +60,6 @@ public class Main {
                 item.increaseSold();
             }
         }
-    }
-
-    // function to print the item information
-    public static void getItemInfo(Item item) {
-        System.out.println(item.getItemInfo());
-    }
-
-    // function to get the information of item sold
-    public static int getItemSold(Item item) {
-        return item.getItemSold();
-
     }
 
 }

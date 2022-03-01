@@ -46,6 +46,12 @@ public class Item {
         this.stock = stock;
     }
 
+    public void updateItem(String name, int point, int stock) {
+        this.name = name;
+        this.point = point;
+        this.stock = stock;
+    }
+
     public String getItemInfo() { 
         return "Item name: '" + this.name + "', Point: " + this.point + ", Stock Available: " + this.stock + ", Item Sold:  " + this.itemSold;
     }
